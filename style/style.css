@@ -832,7 +832,6 @@ select {
         background-position: center;
         background-size: cover;
         height: 700px;
-        
     }
 
     .header-contents2 {
@@ -1006,14 +1005,4 @@ select {
 
     }
 
-}
-@media screen  and (max-width:480px){
-    header{
-        background-position: center;
-        background-size: cover;
-        height:100vh;
-        width: 100%;
-        
-    }
-    
 }

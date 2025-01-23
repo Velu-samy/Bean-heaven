@@ -18,7 +18,9 @@
 
 <body style="background-color: white;">
     <header class="Home" id="home">
-     
+        <div id="overlayblack" class="overlay">
+
+        </div>
         <div id="overlaybox" class="overlay-box">
             <input type="text">
             <a onclick="closes()"> <i style="color: white;font-size: 20px; margin-left: 10px; padding-top: 8px;"
