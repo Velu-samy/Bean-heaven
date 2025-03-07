@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffe shop</title>
+    <title>Bean Heaven</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="icon" type="image/png" href="./pics/icon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -49,7 +50,7 @@
                     <a class="opo" style="color:black;
                     
                     font-size: 20px;
-                    margin-top:35px; margin-right: 30px;" href="login.html">
+                    margin-top:35px; margin-right: 30px;" href="./frontend/login.html">
                         <i class="fas fa-user"></i>
                     </a>
                     <a style="margin-right:30px; margin-top: 35px;color:black;font-size:20px;">
@@ -81,14 +82,14 @@
                     href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
             <div class="header-contents2" data-aos="fade-down" data-aos-duration="2650">
-
+                <img  id="img-notfordesk"      src="./pics/phonebg-s.webp" alt="">
                 <h2 class="h-2">Welcome to <span>Bean heaven</span></h2>
-                <p style="margin-top: 50px;" class="notfordesk">At Bean Haven, we believe that every cup of coffee
+                <p style="margin-top: 30px;" class="notfordesk">At Bean Haven, we believe that every cup of coffee
                     should be an experience.</p>
-                <p class="notforphone">At Bean Haven, we believe that every cup of coffee should be an experience.<br>
+                <p class="notforphone"    style="margin-bottom: 30px;" >At Bean Haven, we believe that every cup of coffee should be an experience.<br>
                     Our cozy atmosphere
                     and expertly brewed beverages offer the perfect escape<br> from the hustle and bustle</p>
-                <button>Book<span></span></button>
+                    <a href="#booking"  class="a-text" >Book Now</a>
             </div>
         </div>
 
@@ -251,7 +252,7 @@
         <div class="aboutus-container">
             <div class="row">
                 <div class="col" data-aos="zoom-in-right" data-aos-duration="1000">
-                    <img src="./pics/aboutpg.jpg" alt="">
+                    <img src="./pics/2632560." alt="">
                 </div>
                 <div class="col-2" data-aos="zoom-in-left" data-aos-duration="1000">
                     <div class="col-2-container">
@@ -294,8 +295,8 @@
                                 <input required name="fn" type="text">
                             </div>
                             <div class="form-grp">
-                                <span>How Many Member</span>
-                                <input required max="10" min="1" name="mb" type="number">
+                                <span>Last Name</span>
+                                <input required name="ln" type="text">
                             </div>
                             <div class="form-grp">
                                 <span>Date Of Booking</span>
@@ -303,9 +304,9 @@
                             </div>
                         </div>
                         <div class="col-2">
-                            <div class="form-grp">
-                                <span>Last Name</span>
-                                <input required name="ln" type="text">
+                        <div class="form-grp">
+                                <span>How Many Member</span>
+                                <input required max="10" min="1" name="mb" type="number">
                             </div>
                             <div class="form-grp">
                                 <span>Phone Number</span>

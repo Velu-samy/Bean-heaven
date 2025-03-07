@@ -4,6 +4,7 @@ h1 {
     font-style: normal;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -66,7 +67,7 @@ header {
     box-sizing: border-box;
     height: 100vh;
     width: 100%;
-    background-image: url(../pics/background.png);
+    background-image: url(../pics/background.webp);
     background-position: center;
     background-size: cover;
 }
@@ -115,6 +116,9 @@ li a::after {
     background-color: #D2B48C;
     position: absolute;
 }
+html{
+    overflow-x: hidden;
+}
 
 li a:hover::after {
     width: 100%;
@@ -134,30 +138,26 @@ li a:hover::after {
     color: white;
 }
 
-.header-contents2 h2 span {
-    color: #D2B48C;
-
-}
-
-
-.header-contents2 button {
-    padding: 10px 10px;
-    width: 140px;
-    margin-left: 240px;
-    margin-top: 10px;
+.header-contents2 button{
+    margin: 30px;
+    margin-top: 20px;
+    margin-left: 220px;
+    padding: 15px 15px;
     border-radius: 10px;
+    background-color: #D2B48C;
+    color: black;
     transition: 0.5s;
 }
 
-.header-contents2 button:hover {
-    background-color: #D2B48C;
-    border: 1px solid black;
+.header-contents2 button:hover{
     transform: scale(1.1);
+}
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-    /* Add shadow */
+
+.header-contents2 h2 span {
+    color: #D2B48C;
+
 }
 
 .header-contents2 p {
@@ -422,7 +422,7 @@ html {
     background-size: cover;
     background-attachment: fixed;
     height: 200px;
-    background-image: url(../pics/newsletterbg.jpg);
+    background-image: url(../pics/newsletterbg.webp);
 }
 
 .feedback-container {
@@ -522,7 +522,7 @@ select {
 }
 
 .booking {
-    background-image: url(../pics/bookingbg.jpg);
+    background-image: url(../pics/bookingbg.webp);
     background-position: center;
     background-size: cover;
     height: 750px;
@@ -710,14 +710,25 @@ select {
 .fa-shopping-cart {
     cursor: pointer;
 }
+#img-notfordesk{
 
+display: none;
+}     
+.a-text {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    margin: 30px;
+    margin-top: 20px;
+    margin-left: 220px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
 
-
-
-
-
-
-
+  .a-text:hover {
+    background-color: #D2B48C;
+  }
 @media screen and (max-width:800px) {
 
 
@@ -799,7 +810,7 @@ select {
 
     .social-icon {
         flex-direction: row;
-        margin-top: 250px;
+        margin-top: 277px;
         font-size: 20px;
         color: white;
         display: flex;
@@ -809,6 +820,7 @@ select {
 
     .social-icon i {
         margin-right: 5px;
+        margin-bottom: 10px;
     }
 
     .cross-d {
@@ -828,25 +840,36 @@ select {
     }
 
     header {
-        background-image: url(../pics/phonebg.png);
+        background-image: url(../pics/phonebg-f.webp);
         background-position: center;
         background-size: cover;
         height: 700px;
     }
+    #img-notfordesk{
+          display: block;
+          position: relative;
+          width: 225px;
+          bottom: 10px;
+          
+    } 
 
     .header-contents2 {
-        position: absolute;
-        top: 25%;
-        left:25%;
+        position:absolute;
+        left: 0%;
+        top: 15%;
         color: white;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        align-items: center;
+        margin-left: 0%;
+        padding: 20px;
+
     }
 
     .header-contents2 h2 {
         font-size: 36px;
-        margin-left: 30px;
+        text-align: center;
     }
 
     .forphonenot {
@@ -855,16 +878,28 @@ select {
 
     .header-contents2 p {
         font-size: large;
+        margin-top: 10px;
+        margin-bottom: 10px;
 
     }
 
-    .header-contents2 button {
-        padding: 10px 10px;
-        width: 140px;
-        margin-left: 60px;
-        margin-top: 20px;
-        border-radius: 10px;
-    }
+    .header-contents2 .a-text{
+        margin-left: 0px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding: 10px 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            margin: 0px;
+            margin-top: 30px;
+          }
+        
+          .a-text:hover {
+            background-color: #D2B48C;
+          }
+    
 
     .notforphone {
         display: none;
@@ -873,7 +908,8 @@ select {
 
     .notfordesk {
         display: block;
-        margin-left: 40px;
+        margin-top:0px;
+        
     }
 
     .product-container {
@@ -919,7 +955,7 @@ select {
 
 
     .feedback-container input {
-        width: 100%;
+        width: 94%;
     }
 
     .feedback-container h2 {
@@ -1004,5 +1040,9 @@ select {
         width: 1=275px;
 
     }
+    body, html {
+        overflow-x:hidden;
+      }
 
-}
+    }
+
